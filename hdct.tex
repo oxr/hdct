@@ -1,0 +1,481 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{mathptmx}
+\usepackage{epsf}           %\input{epsf}
+    %\usepackage{amsfonts}
+%\usepackage{amstext}
+%\usepackage{amssymb}
+%\usepackage{euscript}
+\usepackage{url}
+\usepackage[dvips]{graphics}
+\usepackage[dvips,all]{xy}
+%\usepackage[round,authoryear]{natbib}
+\usepackage{multicol}
+
+%\newlength{\extraplusheight}
+%\newlength{\extrapluswidth}
+%\setlength{\extraplusheight}{4.7cm}
+%\setlength{\extrapluswidth}{4.7cm}
+%\addtolength{\textwidth}{\extrapluswidth}
+%\addtolength{\textheight}{\extraplusheight}
+%\addtolength{\oddsidemargin}{-.5\extrapluswidth}
+%\addtolength{\evensidemargin}{-.5\extrapluswidth}
+%\addtolength{\topmargin}{-0.5\extraplusheight}
+\setlength{\parindent}{0.1in}
+\setlength{\parskip}{0.4ex}
+
+
+\setlength{\topmargin}{-2cm}
+\setlength{\textheight}{26cm}
+\setlength{\oddsidemargin}{-0.68cm}
+\setlength{\textwidth}{17.1cm}
+
+
+
+
+% Discourage unnecessary hyphenation.
+\sloppy\hyphenpenalty 4000
+
+% Used to mark up query in the text.
+\newcommand{\marginalia}[1]{\mbox{}\marginpar[\hfill#1]{#1}}
+\newcommand{\query}[2][?]{%
+  \marginalia{\parbox{\marginparwidth}{%
+      \raggedright\fussy\footnotesize#2}}\dag}
+\newcommand{\patty}[1]{{\bf patty: {#1}}}
+\newcommand{\ondrej}[1]{ \begin{quote}{\it{\bf Ondrej:}{#1}}\end{quote}}
+\newcommand{\vague}[1]{[\emph{#1}]}
+%\newcommand{\patty}[1]{}
+
+\newcommand{\gap}{\protect{\hspace*{0.5em}}}
+
+\begin{document}
+
+\thispagestyle{plain}
+\begin{center}
+  {\Large {\bf Theory and Applications of Higher Dimensional Category Theory}}\\ {\Large \bf Case for Support}\\[1ex]
+  \rule{140mm}{.5mm}\\[2ex]
+\end{center}
+
+\vspace*{-0.2in}
+
+\subsection*{Part 1A: Previous Research and Track Record - Prof Neil Ghani}
+See also \url{http://www.cis.strath.ac.uk/~ng/}
+
+Prof. Ghani obtained his PhD in Computer Science from the University
+of Edinburgh in 1995 where he worked on categorical models of
+rewriting.  Subsequently he received grants from the Royal Society of
+London and the EU-funded EUROFOCS program to conduct post-doctoral
+research at the Ecole Normale Superieure in Paris. In January 1997, he
+became a Research Fellow at the University of Birmingham and then in
+September 1998 he became a Lecturer in the Department of Mathematics
+and Computer Science at the University of Leicester. In September
+2005, he moved to the University of Nottingham where he became a
+Reader in January 2007. On July 1 2008, he was offered a professorship
+at the University of Strathclyde and asked to form the Mathematically
+Structured Programming research group there.
+
+{\bf Research Summary:} Prof. Ghani's research tries to understand the
+nature and structure of computation. This is quite a bold statement
+and inevitably, only partial answers will be
+forthcoming. Nevertheless, this statement shows his
+commitment to ask deep and fundamental questions so as to produce
+research which is of the highest calibre and which will stand the test
+of time rather than become obsolete within a few years. In particular,
+he has worked extensively in the following areas which form the
+pillars upon which this proposal is built.
+
+\begin{itemize} \item {\bf Category Theory:} Category theory is a
+  relatively new mathematical discipline which provides an abstract
+  theory of structure and hence is key to Prof. Ghani's work. He has applied
+  various categorical structures such as monads, comonads, coalgebras,
+  enriched categories and Kan extensions to problems in computation.
+  Of closest relevance to this proposal is his work on containers which
+  provides a theory of concrete data types.
+
+\item {\bf Type Theory:} Prof. Ghani uses type theory as an intermediate
+abstraction between functional programming and its categorical
+underpinnings. He has worked on features such as type systems, pattern
+matching and explicit substitutions which make the lambda-calculus
+closer to ``real'' functional languages. 
+%I was awarded grants from the
+%Royal Society of London and from the EUROFOCS programme to conduct
+%part of this research. 
+He also developed the subject of eta-expansions and showed it to be
+better behaved than the more traditional theory of eta-contractions. He
+solved the long standing open problem of the decidability of
+beta-eta-equality for sum types which had attracted the attention of a
+number of research groups across the world.
+
+\item {\bf Programming Languages:} Humans are good at high level,
+abstract thinking and programming languages should reflect that so as
+to make it easier for humans to program. Functional languages offer
+that possibility so Prof. Ghani has been active in their development.  
+Of clear relevance to this project is his work on initial algebra
+semantics for advanced data types such as nested types and GADTs. He has
+also worked on short cut fusion and the problem of how to compose
+monads.
+
+% is the corner stone of inductive types. I showed
+% that it was, counter to popular belief, expressive enough to define
+% canonical forms of recursion which occur with nested types. I also
+% extended initial algebra semantics to GADTs. I also extended initial
+% algebras with an additional universal property based upon the
+% characterisation of initial algebras as limits. This has generated new
+% Church encodings for inductive types and placed short cut fusion at
+% the centre of initial algebra semantics  
+\end{itemize}
+
+{\bf Publications:} Prof. Ghani has written over 45 papers which have been
+published in internationally refereed conferences and journals. These
+can be found from the above url. Especially relevant are papers on
+initial algebra semantics~\cite{ghani-tlca07,ghani-popl08} and
+containers~\cite{ghani-fossacs03,ghani-appsem04,ghani-fi04,ghani-icalp04,ghani-jcats07}.
+
+{\bf Grants:} Prof. Ghani has been awarded the following research grants: i)
+Theory and Applications of Containers. EPSRC 2005-2008. Principal
+Investigator. Grant Value: 230,000 pounds. Code EP/C511964/1; ii)
+Midlands Graduate School. EPSRC 2004-2006. Principal
+Coalgebra and Recursion. The Royal Society of London, 2003-2005. Sole
+Investigator. Grant Value: 12,000 pounds. Code GR/T06087/01; iii)
+Investigator. Grant Value: 6,000 pounds; iv) Kan - A Categorical
+approach to Computer Algebra. EPSRC 2001 - 2004. Sole
+Investigator. Grant Value: 130,000 pounds. Code GR/R29604/01. End of
+grant IGR assessment: Tending to Outstanding; v) Categorical
+Rewriting: Monads and Modularity. EPSRC 2000 - 2002. Sole
+Investigator. Grant Value: 52,000 pounds. Code GR/M96230/01.  End of
+grant IGR assessment: Outstanding; and vi) Eta-Expansions in Dependent
+Type Theory. EUROFOCS 1996. Sole Investigator. Grant Value: 10,000
+pounds.
+
+{\bf Esteem Indicators:} Prof. Ghani is a current member of the EPSRC
+college charged with assessing the quality of grant applications. He
+was the director of the Midlands Graduate School in the Foundations of
+Computer Science. He is also on the steering committee for the British
+Colloquium on Theoretical Computer Science. He has succesfully
+supervised 2 PhD students, has two more in their third year and has
+supervised 2 RAs. He has been the external examiner for 2 PhD
+students. This year, he has been on the PC's of PPDP, CMCS and RTA.
+
+
+\section*{Part 1B: Previous Research Track Record - Dr Eugenia Cheng}
+
+\vspace*{1in}
+
+\section*{Part 1C: Previous Research Track Record - Dr Ondrej Rypacek}
+
+
+\vspace*{1in}
+
+\pagebreak
+
+
+\section*{Part 2: The Proposed Research and its Context}
+
+\subsection*{2.1  \gap Introduction}\label{sec:intro}
+
+{\bf What is Higher Dimensional Category Theory:} When are two things
+equal?  This is an age old philosophical problem which has caused
+confusion throughout the centuaries. 
+
+\begin{itemize}
+\item Mathematics is typically extensional
+\item Logic/computation/constructivism is intensional
+\item definitional equality vs propositonal equality?
+\item Both challenge each other. Mathematica foundations of
+  computation, comptational support for mathematics
+\end{itemize}  
+Remarkably, we are finally on the verge of making real and
+significant progress on understaning equality.
+\begin{itemize}
+\item CT is a theory of structure replacing set theory as it is more
+  high level. Highly axiomatic. Algebraic complementation to Logic. CT
+  moves away from looking into objectsand looks instead at morphisms.
+\item HDCT offers to intensionalise the extensional standard CT. It is
+  algebraic to complement to the logical perspectives of HDTT.
+\item HDTT has come along too.
+\end{itemize}
+
+{\bf The Project:} Although the ideas behind higher dimensional
+category theory were a fundamental innovation, they have yet to become
+widely used. We believe this is because i) the conceptual and
+theoretical foundations of higher dimensional category theory need
+further development; and ii) more examples and applications of the use
+of higher dimensional category theory are needed to illustrate its use
+to a broader audience. Therefore we intend to pursue a twin-tracked
+research programme based upon a synthesis of theoretical and applied
+research:
+\begin{itemize}
+\item {\bf Theoretical Foundations:} Unify definitions of higher
+  dimensonal categories, develop higher dimensional variants of
+  functors, natural transformations, adjoints, provide tools to reduce
+  the complexity of reasoning in HDCT and run case studies.
+\item {\bf Practical Applications:} We will demonstrate the potential
+  for higher dimensional category theory to make a fundamental impact
+  on both mathematics and computation by developing a number of naturally
+  occurring applications. Principally, these applications will be in
+  the areas of type theory, rewriting and homotopy theory. These are
+  ideal application areas as HDCT not only solves problems that
+  researchers currently study, but also suggests new research
+  directions, perspectives and ideas within these areas.
+\end{itemize}
+
+Taken as a whole, this body of research will provide complementary
+algebraic and techniques to address the fundamental and inter-related
+questions of i) what can we do with HDCT; and ii) how it can be done
+in as clean and cogent a form as possible.
+
+{\bf Calibre and Feasibility:} The fundamental nature of the problem
+of what makes mathematical and computational entities equal, and the
+consequent potential for applications in a variety of different
+fields, attest to the quality and calibre of this project. Our
+ambition is demonstrated by our central belief that higher dimensional
+category theory can repilcate the ability of standard category theory
+to provide a unifying, axiomatic and foundational framework for
+mathematics and computer science.
+
+The feasibility of the project is demonstrated by i) the involvement
+of the world leaders (Obama, Putin etc) in the project as project
+partners; and ii) more generally, our experience in category theory, type
+theory and the application of these foundational disciplines to type
+theory and programming languages (in particular Agda and Epigram).
+
+\subsection*{2.2 \gap Scientific and Technological Relevance:} 
+
+{\bf Category Theory:} One of the most remarkable accomplishments of
+the early 20th century was to formalize all of mathematics in terms of
+a language with a deliberately impoverished vocabulary: the language
+of set theory. However, set theory's low-level nature is a deep
+problem when it comes to its use - we understand the world in terms of
+high level-abstractions. As a result category theory, developed in the
+second half of the 20th centuary, has gained ever wider traction in
+matheamtics, computer science, physics, biology etc because it
+provides a high level theory of structure. At a simple level, while
+set theory seeks to understand entities as sets and their elements,
+category theory treats entities as "black boxes" and instead
+understands them via the morphisms between them
+
+{\bf Higher Dimensional Category Theory:}
+
+\begin{itemize}
+\item Morphisms between morphisms
+\item HDCT is not n-Cat theory
+\end{itemize}
+
+{\bf Type Theory:} 
+\begin{itemize}
+\item Martin L\"of Type Theory
+\item Identity types
+\item HDTT
+\end{itemize}
+
+{\bf Programming Languages:} Abstraction is vital not only in mathematics - it
+is equally essential in programming where identifying common structure
+is essential to ensure code is clear, clean and concise. Type theory
+and category theory have already helped drive the development of such
+abstractions, eg dependent types, monadic programming and initial
+algebra semantics.
+
+{\bf Rewriting:} Rewriting~\footnote{For the sake of this proposal we
+  think of operational semantics as a form of rewriting} forms a
+simple model of computation by seeking to understand how one entity
+can be replaced by an extensionally equal, but computationally
+simpler, entity. In a nutshell, rewriting is an asymetric form of
+equality where equality relations are directed to model reduction.
+
+We intend to build upon this convergence of ideas between
+mathematicians and computer scientists by demonstrating what is
+available to them, what can be done with it, and introducing them to
+HDCT definitions, constructions and theorems they are currently
+unaware of. And, with advances in dependently typed programming
+languages, we can give programmers code to experiment and play
+with. This is key to ensuring that HDCT breaks out of the small
+community which works on HDCT and becomes as widely used and essential
+to researchers as category theory has become.
+
+
+\subsection*{2.3 \gap Relevance to Beneficiaries}
+
+{\bf Relevance to Beneficiaries:} This, perhaps more than many
+projects, is an ambitious project which has the potential to have a
+significant impact on a large number of researchers. We believe that
+there are now a critical mass of examples of higher dimensional
+structures in mathematics, computation, physics and biology to
+motivate users to understand the subject of HDCT and thereby enable
+its wider dissemination. Less mathematical users will appreciate the
+computational support we will develop to underpin HDCT. Indeed, our
+overall aim is to ensure that HDCT becomes as as indispensible as
+category theory is becoming. The potential impact of this research can
+also be assessed by it's adventure, timeliness and novelty which we
+now discuss.
+
+{\em Adventure:} In order to ensure that HDCT matures into a
+fundamental tool capable of use by those already using category
+theory, we have designed an adventurous proposal which concentrates on
+establishing fundamental results which are likely to stand the test of
+time, and on exploiting these results by applying them to current
+problems in the theory of computation. This is evidenced by the scope
+of the project which ranges from fundamental but theoretical questions
+to the production of applications and even associated code.
+
+This is clearly not incremental research. Prof Ghani has not worked on
+HDCT before while Dr Cheng has not worked on programming languages
+research before. They are therefore ideal collaborators as they share
+a common categorical language to allow them to communicate, but bring
+expertise which the other lacks but is interested in learning about.
+Their different perspectives is likely to stimulate new thinking
+about, and applications of, HDCT. Further, previous research on HDCT
+has tended to remain within theoretical domain. The central thrust of
+this proposal - to turn HDCT into a widely used technique - is thus a
+new direction for HDCT.
+
+{\em Timeliness:} This is an excellent moment to undertake this
+research. The advent of dependently typed programming languages gives
+new ways for non experts to understand HDCT via an implemntation of
+it. In a different direction, new advances in HDTT will help
+researchers in HDCT while progress we make in HDCT can feed into HDTT. 
+
+{\em Novelty:} This is novel research. We intend not to confine
+ourselves to either the theoretical domain or simply concentrate on
+applications. Rather, for us, there is a symbiotic relationship
+between mathematics, programming and the design of programming
+languages, and any attempt to sever this connection will diminish each
+component. At the centre of this relationship is the desire to use
+mathematics to understand the nature of computation, and then to
+reflect that understanding in programming languages. Hence our
+proposal is novel in taking cutting edge mathematics and applying it
+to make cutting edge programming techniques.
+
+{\bf Dissemination:} We have a track record of submitting papers to
+internationally leading journals and conferences and shall use them as
+the principal vehicle for dissemination of our results. We are also
+active participants in more informal meetings such as the {\em British
+  Colloquium on Theoretical Computer Science}. A web-site will detail
+the state of the project. We are active members of relevant email
+lists and will also use them to disseminate our results. We will
+collaborate extensively with our project partners which will further
+aid dissemination. Finally, dissemination will be enhanced by our
+planned twice yearly project meetings (see below) which will be open
+to other researchers to attend and contribute to.
+
+{\bf Management, Planning and Coordination:} We have carefully planned
+this project. Finally, while many of the
+objectives will influence others, none are prerequisites. Hence lack of
+progress on one objective will not prohibit progress on other
+objectives, eg ... 
+
+{\em Coordination:} During the first three years, we have planned
+twice yearly intensive meetings rotating between the sites. These
+meetings will be open so that interested academics may attend giving
+further opportunities for input, feedback and dissemination. During
+that period, we also plan one individual visit between sites per
+person per year for more focussed work on specific topics.  A wiki and
+blog will be used for interaction between participants and to create a
+record of progress. 
+
+{\em Feasability:} We are the right people to execute this
+research. Dr Cheng is one of the world leaders on HDCT while Prof
+Ghani is an expert in using categorical abstractions to help structure
+and reason about computational processes.
+
+Further, the Universities of Strathclyde and Sheffield all have
+research groups dedicated to understanding category theory and the
+mathematical foundations of computation. Strathclyde is also
+interested in developing the programming languages of the future and
+this research will feed into that goal. Our contacts (detailed under
+dissemination) further enhance the feasability of this project.
+
+
+
+\input{research2.tex}
+
+\vspace*{0.02in}
+
+
+
+
+\small
+
+%\setlength{\bibsep}{0pt}
+\bibliographystyle{plain}
+\bibliography{hdct}
+% \begin{thebibliography}{}
+
+% \vspace*{-0.2in}
+
+% \setlength{\parindent}{0pt}
+% \setlength{\columnsep}{0.3in}
+% \begin{multicols}{2}
+
+% \bibitem[AAG05]{aag05}
+% M. Abott, T. Altenkirch, and N. Ghani. Containers - Constructing
+% strictly positive types. {\em TCS} 342 (2005), 3--27.
+
+
+% \bibitem[Bar92]{bar92}
+% H. Barendregt.  Lambda calculi with types. {\em Handbook of Logic in
+%   Computer Science}, 1992. 
+
+
+% \bibitem[Jac99]{jac99} B. Jacobs. {\em Categorical Logic and Type
+% Theory}. North Holland, 1999.
+
+% \bibitem[MM04]{mm04}
+% C. McBride and J. McKinna. The view from the left.
+% {\em JFP} 14(1) (2004), 69-111.
+
+% \bibitem[MTHM97]{mthm97}
+% R. Milner, M. Tofte, R. Harper, and D. MacQueen. {\em The Definition
+%   of Standard ML, Revised Edition}. MIT Press, 1997.
+
+% \bibitem[Mog91]{mog91}
+% E. Moggi. Notions of computation and monads.
+% {\em Inf. and Comp.} 93(1) (1991), 55-92.
+
+
+% \bibitem[PJ03]{pj03}
+% S.~L.\ {Peyton Jones}. {\em Haskell 98 Language and Libraries: {T}he
+% Revised Report}. Cambridge, 2003.
+
+
+
+% \end{multicols}
+% \end{thebibliography}
+
+\pagebreak
+
+%\section*{Diagrammatic Workplan}
+
+%\epsfbox{indexed.eps}  % inputs given file
+
+\pagebreak
+
+\end{document}
+
+
+
+
+\subsection*{3. \gap Additional Considerations}
+
+\begin{itemize}
+
+\item {\bf Why us?}\\
+
+\item {\bf Success Criteria.}\\
+ 
+\item {\bf Relevance to Beneficiaries and Related Work.}
+
+\item {\bf Impact.} 
+
+\item {\em ...Adventurous:} 
+
+\item {\em ...Timely:} 
+
+\item {\em ...Novel:} 
+
+\item {\bf Feasibility.} 
+
+\item {\bf Transformative:}
+
+\item {\bf EPSRC Politics:}
+
+\item {\bf Project Partners:}

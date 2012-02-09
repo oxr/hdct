@@ -1,0 +1,194 @@
+\subsection*{2.4 \gap Methodology and Research  Programme}\label{sec:detailed}
+
+\subsection*{2.4.1 \gap Theoretical Research} 
+%
+We have presented the motivation for higher dimensional category
+theory - now let us say exactly what we will do to bring this
+potential to fruition.
+
+{\bf WP1. Higher Dimensional Categories}
+%
+Both theory and applications of higher category theory have been
+plagued to date by the complexity of the elementary notions. 
+Just of weak $\omega$-category there are many alternative
+definitions whose formulations are non-elementary and which
+are, moreover, not obviously equivalent. This is not in principle a
+problem; the existence of many alternative but equivalent versions of
+the same concept is a testament to its fundamental nature.  However,
+and more importantly, the payload of doing higher category theory is,
+at the moment, so high that it strangles its further development.
+
+\emph{We believe that this is not necessary.} Although an
+$\omega$-category is undeniably a complicated notion requiring
+nontrivial abstractions it is an appropriate language to deal with the
+complexity in derived terms that is missing. We are proposing to
+develop such a language and we believe (Martin L\"of) Type Theory is
+the ideal logical framework for this task. Recent research shows deep
+connections between Type Theory and higher category theory which
+indicates that Type Theory isn't just an general tool for the
+development of various logics but in this case also the
+canonical (internal, inherent) one.
+
+\emph{We will thus develop a language for higher category theory}
+based on the so-called opetopic approach and iterated indexed
+containers.  Although this seems straightforward enough now, things
+become interesting once extensional equality is dropped\footnote{We
+  have to do without extensionality so we are not circular} and notions
+previously equal become distinct. For instance, only of indexed
+containers there are four varieties, depending on whether we work with
+indexed or fibered families.
+
+\emph{We will adhere to the a syntactical approach to the definition.}
+Explicitly, we define the syntax of an $\omega$-category using
+indexed containers (as opetopes), and then define an $\omega$-category
+as any opetopic set with interpretation of the syntax. This approach
+has proved vital in our previous work \cite{} in circumventing the
+usual problem with coherence [MacLane] arising in \textit{non-faithful
+models}\marginpar{What is \\ this?}. It also allowed us to eliminate equational axioms and
+quotienting, by careful indexing, which is otherwise necessary in the
+usual semantical approaches.
+
+\emph{To establish relevance to the existing definitions}, we will
+continue the ongoing program of unifying foundations of higher
+category theory and show our approach equivalent to the major other
+approaches.
+
+
+{\bf WP2. Higher Dimensional Ontology}
+%
+Cells and categories are the letters and alphabets in our language for
+higher categories. Once we have defined them, we start building the
+basic vocabulary of words, i.e. the various universal
+constructions. The notion of universality and identification of the
+key universal constructions are the most important
+contributions of ordinary category theory to modern mathematics and
+computing science.  We will develop their higher-dimensional versions.
+
+\emph{As with the notion of a category itself, the fundamental
+  obstacle to a naive approach would be the aforementioned
+  combinatorial complexity.}  To tackle it we need a good mathematical
+calculus. Therefore we start by developing a calculus of opetopes
+based on the mathematics of indexed containers \cite{?,?,?}.
+%
+% At the end of \cite{}, such a
+% calculus of opetopes is started in terms of the diagrammatic
+% representation of opetopes presented in the paper. 
+%
+The starting points should be opetopic functors and
+their transformations. Opetopic functors have appeared in the literature
+before \cite{}.  Naturally they are defined as maps of the underlying
+opetopic sets \cite{?}, either preserving or not the universality of
+fillers. If preservation is omitted, the resulting notion of a functor
+is \emph{lax}, otherwise we obtain a \emph{strong} notion from
+uniqueness of universal constructions up to isomorphism/weak equivalence.
+%
+\textbf{oxr: are strict functors interesting?}
+%
+For a pair of functors $F$, $G$ from $\mathcal{C}$ to $\mathcal{D}$, a
+transformation from $F$ to $G$ should be collection of \emph{opetope
+  morphisms} from $F(o)$ to $G(o)$ for each opetope in
+$\mathcal{C}$. The missing ingredient, \emph{opetope morphism}, will
+be defined inductively on the dimension of the opetope. Our paper
+\cite{} develops a roughly analogical notion of a morphism in the
+globular setting. Once we have developed the mathematics of functors
+and their transformations, we derive the notions of adjunctions, Kan
+extensions and from there the various limits and colimits.
+
+Finally, we compare our functors to notions of
+functors developed for other notions of $\omega$-categories, e.g.
+Garner's \emph{homomorphisms} \cite{} for Batanin's
+$\omega$-categories. 
+
+% Proposals for functors, or so-called , have appeared in
+% the literature before. Garner \cite{} develops a notion of a
+% homomorphism of Batanin's globular $\omega$-categories. For opetopic categories,
+
+
+% If we assume for a moment that there is (something like) an
+% $\omega$-category of $\omega$-categories, where objects (0-opetopes)
+% are categories and arrows between objects (1-opetopes) are functors,
+% then \emph{transformations} must be higher opetopes. We intentionally
+% don't say \emph{natural} transformations as the usual notion of
+% naturality will need to be relaxed in the weak $\omega$-setting as is
+% the case already in the low dimensions. The correct notion(s) of
+% naturality should also determine the notion of universal construction
+% (limit, colimit, etc. ) under consideration. 
+
+% A notion of \emph{universality} is built into opetopic categories. We
+% will look to reuse that built in notion and define 
+% Kan extension as a filler of an appropriate niche. 
+
+
+% \textbf{oxr:} that all sounds like a lot of waffle. 
+%previous work
+
+
+
+% \emph{We are going to define and investigate the different notions of
+%   functors, associated notion of transformations and universality.}
+% Next we define a notion of Kan Extension, from which all other
+% universal constructions follow by instantiation following the
+% principle of generalisation of lower-dimensional examples. 
+
+{\bf WP3: The category of $\omega$-categories}
+\begin{itemize}
+\item Is it a problem  / possible at all / has it been investigated ? 
+\item If it's not possible, we need constructions on categories
+  (products, units, etc.) 
+\item If it's been done, we would just take WP2 and apply.
+\item If it's not known, we want to do it. 
+\item Let's ask Eugenia !
+\end{itemize}
+
+
+{\bf WP4: HDTT}
+\begin{itemize}
+\item Martin L\"of Type Theory but without UIP.
+\end{itemize}
+Connections of Martin L\"of Type Theory and higher category theory
+($\omega$-groupoids) have come to light with the work of Gambino,
+Garner, Lumsdaine, van den Berg and others \cite{} who have shown
+that without Uniqueness of Identity
+Proofs principle (UIP) identity types have the structure of
+$\omega$-groupoid ($(\infty,0)$-category). While being extremely
+useful and theoretically a relatively manageable object, turning Type
+Theory without UIP into a useful programming and theorem proving
+paradigm is a difficult open problem. 
+
+% bullshit: 
+% Deepening of our understanding of
+% the categorical side of things will contribute greatly to this
+% end. 
+
+% The opetopic definition of $\omega$-category is ideal for
+% formalisation in type theory because it lacks equational axioms -- it
+% postulates data from data without equations, as all equations have
+% been turned into more data. We would like to provide a definition of a
+% weak $\omega$-category internal to type theory.
+% %
+% Such definition could form the basis for an axiomless model of
+% univalent Higher Dimensional Type Theory where UIP doesn't hold. This
+% could provide a platform for further development of programming
+% languages [Epigram]. 
+
+\begin{itemize}
+\item Functional extensionality
+\end{itemize}
+
+
+One important open problem where ordinary category
+theory has already celebrated a great success is understanding of
+(ordinary) inductive types via the so-called \emph{initial algebra
+  semantics}. The higher-dimensional formulation of inductive types is
+an ongoing work in progress \cite{} with exciting
+applications\cite{}. We plan to tackle the categorical semantics in
+parallel, with the aim of both driving the \emph{correct} formulation
+and providing a clear semantics and theoretical background.
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "hdct"
+%%% End: 
